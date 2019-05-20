@@ -13,6 +13,22 @@ config.vm.network "public_network", bridge: "en0: Wi-Fi (Wireless)"
 
 2. スマホからアクセスさせたい VM を `vagrant up`
 
+network interfaces を聞かれたらよしなに選択する（以下の場合は、`1` を入力）
+
+```
+==> default: which network to bridge to.
+==> default: Available bridged network interfaces:
+1) en0: Wi-Fi (AirPort)
+2) en1: Thunderbolt 1
+3) en2: Thunderbolt 2
+4) p2p0
+5) awdl0
+6) bridge0
+==> default: When choosing an interface, it is usually the one that is
+==> default: being used to connect to the internet.
+    default: Which interface should the network bridge to?
+```
+
 3. スマホからアクセスさせたい VM の IPアドレスを確認
 
 ```
